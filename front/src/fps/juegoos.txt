@@ -1,0 +1,29 @@
+01 - Wolfenstein 3D (1992)
+- A menudo considerado el abuelo de los FPS modernos, estableció las bases para muchos de los elementos esenciales del género.
+
+02 - Doom (1993)
+- Revolucionario por su tiempo, introdujo gráficos en 3D más complejos y un juego más rápido y violento que su predecesor, Wolfenstein 3D.
+
+03- Heretic (1994)
+- Desarrollado por los mismos creadores de Doom, llevó la acción de los FPS al mundo de la fantasía y fue uno de los primeros juegos en permitir la mira hacia arriba y hacia abajo.
+
+04 - Hexen (1995)
+- Basado en el motor de Doom, Hexen introdujo más elementos de fantasía y un sistema de clases de personajes, lo que agregó una nueva dimensión a la jugabilidad de los FPS.
+
+05 - Duke Nukem 3D (1996)
+- Conocido por su personaje carismático y su sentido del humor, también trajo innovaciones en términos de diseño de niveles y elementos interactivos.
+
+06 - Quake (1996)
+- Fue uno de los primeros juegos en utilizar gráficos totalmente 3D, lo que significó una gran evolución respecto a los sprites 2D utilizados anteriormente.
+
+07 -Blood (1997)
+- Conocido por su atmósfera oscura y su violento contenido, utilizó el motor de Duke Nukem 3D y es recordado por su estilo gótico y horror.
+
+08 - Half-Life (1998)
+- Revolucionó el género con su enfoque en la narrativa integrada dentro del juego, además de sus innovadores elementos de puzzle y un diseño de niveles inmersivo.
+
+09 - Unreal (1998)
+- Aparte de su motor gráfico avanzado, ofreció un mundo vasto y detallado con una historia atractiva.
+
+10 - Counter-Strike (1999)
+- Originalmente un mod de Half-Life, se convirtió en uno de los juegos de disparos competitivos más populares y duraderos.

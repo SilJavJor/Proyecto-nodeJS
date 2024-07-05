@@ -1,0 +1,190 @@
+/*  Estilos para todos las navbars  */
+
+/* Estilo para la navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to left, #3f0088, #000000);
+    padding: 10px 20px;
+}
+
+/* Estilo para el logo */
+.navbar-left img {
+    height: 35px;
+}
+
+/* Estilo para los enlaces a la derecha con texto contorneado */
+.navbar-right a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    /* Contorno alrededor del texto (color y ancho) */
+    -webkit-text-stroke: 2px #7512e6;
+    /* Color del interior del texto */
+    color: #d0adf8;
+    /* Transición suave de color al pasar el mouse */
+    transition: color 0.3s;
+}
+
+/* Cambiar el color y el contorno al pasar el mouse por encima de "INICIO" */
+.navbar-right a:nth-child(1):hover {
+     /* Contorno alrededor del texto (color y ancho) */
+    -webkit-text-stroke: 0.2px #130031;
+     /* Color del interior del texto */
+    color: #842cff;
+}
+
+/* Cambiar el color y el contorno al pasar el mouse por encima de "SEGA" */
+.navbar-right a:nth-child(2):hover {
+    /* Contorno alrededor del texto (color y ancho) */
+    -webkit-text-stroke: 0.2px #0a0091;
+    /* Color del interior del texto */
+    color: #1900ff;
+}
+
+/* Cambiar el color y el contorno al pasar el mouse por encima de "SNK" */
+.navbar-right a:nth-child(3):hover {
+    /* Contorno alrededor del texto (color y ancho) */
+    -webkit-text-stroke: 0.2px #0080c0;
+    /* Color del interior del texto */
+    color: #17aefa;
+}
+
+/* Cambiar el color y el contorno al pasar el mouse por encima de "FPS" */
+.navbar-right a:nth-child(4):hover {
+    /* Contorno alrededor del texto (color y ancho) */
+    -webkit-text-stroke: 0.2px #7e1720;
+    /* Color del interior del texto */
+    color: #ff0015;
+}
+
+/* Cambiar el color y el contorno al pasar el mouse por encima de "CONTACTO" */
+.navbar-right a:nth-child(5):hover {
+    /* Contorno alrededor del texto (color y ancho) */
+    -webkit-text-stroke: 0.2px #130031;
+    /* Color del interior del texto */
+    color: #842cff;
+}
+
+/* Cambiar el color y el contorno al pasar el mouse por encima de "ACCESO" */
+.navbar-right a:nth-child(6):hover {
+    /* Contorno alrededor del texto (color y ancho) */
+    -webkit-text-stroke: 0.2px #130031;
+    /* Color del interior del texto */
+    color: #842cff;
+}
+
+
+/*  Moviles  */
+/*  Estilo para el botón hamburguesa  */
+.mobile-menu-button {
+    /* Ocultar el botón en pantallas grandes */
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    background: #000000;
+    color: #fff;
+
+}
+
+.mobile-menu-button .bar {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin: 4px 0;
+}
+
+/* Estilo para el menú desplegable */
+.mobile-menu {
+    /* Ocultar el menú en pantallas grandes */
+    display: none;
+    background: linear-gradient(#000000, #7512e6, #000000);
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+    /* Me asegura que el menú esté en una capa por encima del contenido */
+    z-index: 1;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mobile-menu a:nth-child(1){
+    /* Contorno alrededor del texto (color y ancho) */
+    /* -webkit-text-stroke: 0.7px #130031; */
+    -webkit-text-stroke: 0.2px #130031;
+    /* Color del interior del texto */
+    color: #842cff;
+}
+
+.mobile-menu a:nth-child(2){
+    /* Contorno alrededor del texto (color y ancho) */
+    /*-webkit-text-stroke: 0.7px #0a0091;*/
+    -webkit-text-stroke: 0.2px #0a0091;
+    /* Color del interior del texto */
+    color: #1900ff;
+}
+
+.mobile-menu a:nth-child(3){
+    /* Contorno alrededor del texto (color y ancho) */
+    -webkit-text-stroke: 0.2px #0080c0;
+     /* Color del interior del texto */
+    color: #17aefa;
+}
+
+.mobile-menu a:nth-child(4){
+    /* Contorno alrededor del texto (color y ancho) */
+    /*-webkit-text-stroke: 0.7px #960000;*/
+    -webkit-text-stroke: 0.2px #960000;
+    /* Color del interior del texto */
+    color: #ff2a2a;
+}
+
+.mobile-menu a:nth-child(5){
+    /* Contorno alrededor del texto (color y ancho) */
+    /*-webkit-text-stroke: 0.2px #400085;*/
+    -webkit-text-stroke: 0.2px #130031;
+    /* Color del interior del texto */
+    color: #8b1fff;
+}
+
+.mobile-menu a:nth-child(6){
+    /* Contorno alrededor del texto (color y ancho) */
+    /*-webkit-text-stroke: 0.2px #400085;*/
+    -webkit-text-stroke: 0.2px #130031;
+    /* Color del interior del texto */
+    color: #8b1fff;
+}
+
+/* Estilo para mostrar u ocultar el menú desplegable */
+@media screen and (max-width: 768px) {
+    .navbar-right {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .mobile-menu.active {
+        display: block;
+        transform: translateY(0);
+        top: 65px;
+    }
+
+    .content.menu-opened {
+        margin-top: 200px;
+    }
+}

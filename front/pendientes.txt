@@ -1,0 +1,90 @@
+Faltantes
+---------
+
+- verificar Flexbox y/o Grid, , si se verifica marcar que esta hecho en los criterios de evalucion 
+  Punto 5
+  
+- agregar botones de ir arriba y abajo
+
+
+
+
+No indipensables
+----------------
+
+- terminar pagina FPS basandome en la pagina de SEGA
+  Falta terminar imagenes
+
+- agregar en las validaciones la funcion flecha
+  Hecho  -->  Faltan bastantes
+
+
+
+Obligatorios
+------------
+
+- Punto 1  -->  Hecho.
+  por lo menos 4 páginas HTML o 4 secciones si se trata de un sitio One Page. 
+
+- Punto 2  -->  Heccho.
+  solo se agrego un checkbox no se hizo la validacion
+
+- Punto 3  -->  Hecho.
+  verificar tamaños (PC escritorio, Tablet, Celular). 
+
+- Punto 4  -->  Hecho.
+  animacion, transformación o una transición.
+
+- Punto 5  -->  Hecho.
+  estructura HTML maquetada con Flexbox y/o Grid.
+
+- Punto 6  -->  Parcialmente - faltan bastantes.
+  verificar optimizacion de imagenes, si se verifica marcar que esta hecho en los criterios de evalucion. 
+
+- Punto 7  -->  Hecho.
+  servidor online y compartirse mediante un repositorio de Git.
+
+- Punto 8  -->  Hecho.
+  preguntar si podemos utilizar GtiHub Pages, si se verifica marcar que esta hecho en los criterios de evalucion. 
+
+- Punto 9  -->  Hecho.
+  validaciones con https://validator.w3.org/.
+
+- Punto 10  -->  Falta controlar.
+  iframes y/o íconos de FontAwesome y/o fuentes locales o bien de Google Fonts.
+
+
+
+Terminados
+-----------
+- centrar y agrandar boton de ! registrate ahora ¡ en index
+  Hecho
+
+- checkbox en pagina de registro o creacion de de cuenta, Aceptacion de terminos y condiciones, 
+  si se verifica marcar que esta hecho en los criterios de evalucion 
+  Hecho
+
+- centrar boton de enviar en acceso
+  Hecho
+
+- que no se redimensione los forms cuando se activa el hover de los botones
+  Hecho
+
+- agregar a los footers los colores de cada pagina
+  Hecho
+
+- agregar que las imagenes tambien redirijan a las paginas
+  Hecho
+
+- agregar en las validaciones las preguntas con binarios o ternarios lo que se pueda
+  Hecho
+
+- agregar en las alertas de las validaciones lo del ${}
+  Hecho
+
+- reorganizar pagina index (restructuracion del codigo referido a css y js)
+  Hecho.
+
+- reorganizar pagina sega (restructuracion del codigo referido a css y js)
+  Hecho.
+ 

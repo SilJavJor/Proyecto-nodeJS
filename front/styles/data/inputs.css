@@ -1,0 +1,53 @@
+/*  Estilos para todos los inputs  */
+
+input:focus {
+    outline: 1px solid #7900ff;
+}
+
+input:focus + .frm-label {
+    margin-left: 5px;
+    margin-top: -100px;
+}
+
+input::before + .frm-check {
+    background: rgba(0, 0, 0, 0.7);
+    accent-color:  rgba(0, 0, 0, 0.7);
+    background-color: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+input::after + .frm-check {
+    background: rgba(0, 0, 0, 0.7);
+    accent-color:  rgba(0, 0, 0, 0.7);
+    background-color: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+input:checked {
+    background: rgba(0, 0, 0, 0.7);
+    accent-color:  rgba(0, 0, 0, 0.7);
+    background-color: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+input:active + .frm-check {
+    background: rgba(0, 0, 0, 0.7);
+    accent-color:  rgba(0, 0, 0, 0.7);
+    background-color: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+input:enabled + .frm-check {
+    background: rgba(0, 0, 0, 0.7);
+    accent-color:  rgba(0, 0, 0, 0.7);
+    background-color: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+input:first {
+    background: rgba(0, 0, 0, 0.7);
+    accent-color:  rgba(0, 0, 0, 0.7);
+    background-color: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+input:chafirst {
+    background: rgba(0, 0, 0, 0.7);
+    accent-color:  rgba(0, 0, 0, 0.7);
+    background-color: 1px solid rgba(0, 0, 0, 0.7);
+}
+

@@ -1,0 +1,15 @@
+Una breve descripción de tu aplicación. 
+El sitio https://gg-games.netlify.app/ es un desarrollo para un proyecto final perteneciente a un bootcamp.<br>
+
+Que hace.
+Esta aplicación está diseñada con el propósito de proporcionar una plataforma donde los usuarios pueden explorar y disfrutar de una variedad de juegos retro.<br>
+
+Cuál es su propósito.
+Su objetivo principal es ofrecer entretenimiento a través de una colección diversa de juegos disponibles en línea.<br>
+
+Por qué es útil.
+Esto es útil porque centraliza varias opciones de juego en un solo lugar, facilitando a los usuarios encontrar y disfrutar de juegos de diferentes géneros y estilos
+sin tener que buscar en múltiples sitios web.
+
+
+

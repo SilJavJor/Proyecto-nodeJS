@@ -1,0 +1,5 @@
+/* Importar archivos CSS dentro de master.css
+   Carga todos los estilos  */
+
+@import url('../styles/data/forms.css');     /*  Estilos para todos los formularios  */
+@import url('../styles/data/inputs.css');    /*  Estilos para todos los inputs  */

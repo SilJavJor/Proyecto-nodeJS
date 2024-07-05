@@ -1,0 +1,39 @@
+/*  Estilos para la recuperacion de usuario y contraseña  */
+
+@import url('../common/buttons.css');     /*  Estilos para todos las botones  */
+
+.frm-label {
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -60px;
+    z-index: -20;
+    color: white;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.frm-asterisk {
+    margin: 0;
+    margin-left: 1px;
+}
+
+#email {
+    display: block;
+    width: 100%; 
+    font-size: 1.3em;
+    padding: 10px 5px;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid rgb(30, 28, 28);
+    margin-bottom: 30px;
+    color: #A6A6A6;
+    font-family: 'Arimo', sans-serif;
+}
+
+.set {
+    margin-left: 5px;
+    margin-top: -100px;
+}

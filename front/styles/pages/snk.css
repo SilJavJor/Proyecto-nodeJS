@@ -1,0 +1,333 @@
+/*  Estilos para sega  */
+
+/*  Body  */
+body {
+    background: linear-gradient(to left, #0a0a0a, #232F40, #0a0a0a);
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Scorpion-Regular';
+    background: #0000001c;
+    border-radius: 10px 10px 10px 10px;
+    color: #58ecff;
+    animation: neon 1.5s infinite alternate;
+}
+
+h2 {
+    font-family: 'Scorpion-Regular'; 
+    color: #58ecff;
+    animation: neon 1.5s infinite alternate;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    font-size: 40px;
+}
+
+p{
+    font-family: 'Arimo';
+    font-size: 0.7em;
+    font-style: italic;
+    color: #58f4ff;
+    text-align: left;
+    margin: 30px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Scorpion-Regular';
+    margin-top: 10px;
+    color: #58f4ff;
+}
+
+@keyframes neon {
+    0% {
+        text-shadow: 0 0 3px #0080c0e1, 0 0 10px #0080c0, 0 0 10px #0080c0
+    }
+    100% {
+        text-shadow: 0 0 10px #0080c0e1 , 0 0 30px #0080c0e1, 0 0 40px #0080c0e1
+    }
+}
+
+/* Estilo para el navbar */
+.navbar {
+    background: linear-gradient(to left, #16a8f1, #000000);
+}
+
+/* Estilo para los enlaces a la derecha con texto contorneado */
+.navbar-right a {
+    /* Contorno alrededor del texto (color y ancho) */
+    -webkit-text-stroke: 2px #014747;
+}
+
+.navbar a {
+    color: #58f4ff;
+}
+
+/* ------------------ front ---------------- */
+.portada {
+    position: relative; /* Establece la posición del elemento como relativa */
+    text-align: center; /* Centra el contenido de texto en el elemento */
+    background-color: #232F40; /* Color de fondo del banner */
+    top: -4.6vh;
+}
+
+.portada img {
+    width: 100%; /* Establece el ancho de la imagen al 100% del ancho del contenedor */
+    height: 74.7vh;
+    opacity: 50%; /* Establece la opacidad de la imagen al 50%, lo que la hace semi-transparente */
+}
+
+.portada h2 {
+    font-size: 4.1em; /* Tamaño de fuente de 36 píxeles */
+    margin-top: 0px; /* Sin margen superior */
+    font-family: 'Scorpion-Regular'; /* Familia de fuentes personalizada con respaldo de fuentes genéricas sans-serif */
+    color: #17aefa; /* Color del interior del texto */
+    -webkit-text-stroke: 2px #0080c0; /* Contorno alrededor del texto */
+    position: absolute; /* Establece el texto como posición absoluta */
+    top: 50%; /* Lo coloca en la mitad superior del contenedor */
+    left: 50%; /* Lo coloca en el centro horizontal del contenedor */
+    transform: translate(-50%, -50%); /* Lo centra vertical y horizontalmente */
+    animation: neon 1s ease-in-out infinite alternate; /* Animación para el efecto parpadeante */
+}
+
+@media screen and (max-width: 768px) {
+    .portada{
+        height: 150px;
+        top: -3.4vh;
+    }
+
+    .portada img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .portada h2 {
+        font-size: 35px;
+    }
+}
+
+/* ------------------ front text ---------------- */
+.front_text {
+    position: absolute; /* Posición absoluta con respecto al contenedor de la imagen */
+    top: 40%; /* Lo coloca en el centro verticalmente */
+    left: 50%; /* Lo coloca en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el título completamente */
+    color: #58ffff; /* Color del texto */
+    padding: 9.5%; /* Espacio interior del título */
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.info {
+    background-color: #000;
+    width: 92.5%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    text-align: center; /* Centrar el contenido dentro del contenedor */
+    font-size: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 238, 255, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+    .info {
+        width: 90%; /* Ajusta el ancho para dispositivos móviles */
+        font-size: 1.5em; /* Ajusta el tamaño de fuente */
+    }
+}
+
+/* ------------------ consolas ---------------- */
+
+.consoles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 92.5%;
+    margin: auto;
+}
+
+.consoles img{
+    width: 0px;
+    height: 60vh;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .4;
+    transition: .5s ease;
+}
+
+#img-left {
+    border-radius: 10px 0 0 10px;
+}
+
+#img-right {
+    border-radius: 0 10px 10px 0;
+}
+
+.consoles img:hover{
+    cursor: crosshair;
+    width: 200px;
+    opacity: 1;
+    filter: contrast(100%);
+}
+
+@media screen and (max-width: 768px) {
+    .consoles {
+        max-width: 90%;
+        max-height: 70vh; /* Cambia la altura a automática para ajustar el contenido */
+    }
+
+    .consoles img {
+        max-width: 100%; /* Ajusta el ancho de la imagen al 100% */
+    }
+}
+
+/* ------------------ Carrusel ---------------- */
+.container-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    margin-top: 6%;
+    margin-bottom: 5%;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.carousel img {
+    max-width: 100%;
+}
+
+#line:hover {
+    cursor: pointer;
+}
+
+#prevBtn {
+    visibility: hidden;
+    height: 0px;
+}
+
+#nextBtn {
+    visibility: hidden;
+    height: 0%;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel {
+        width: 90%;
+        margin-bottom: 10%;
+    }
+
+    .container-game {
+        margin-top: 32%;
+    }
+}
+
+/* ------------------ API ---------------- */
+.twitch-section {
+    /* Estilos para el contenedor principal de la sección de Twitch. */
+    text-align: center; /* Centra el texto en el contenedor. */
+    background-color: #000000; /* Establece el color de fondo a negro. */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.twitch-titulo {
+    /* Estilos para el título "STREAMS DE VALORANT". */
+    font-size: 48px; /* Establece el tamaño de fuente en 48 píxeles. */
+    color: #58ecff; /* Establece el color del texto en un tono de naranja. */
+}
+
+.streams {
+    /* Estilos para el contenedor de los streams. */
+    width: 100%; /* Establece el ancho del contenedor al 100% del ancho disponible. */
+    display: grid; /* Utiliza una disposición de cuadrícula para los elementos secundarios. */
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas de igual tamaño. */
+    column-gap: 1rem; /* Establece el espacio entre columnas en 1 rem. */
+    row-gap: 2rem; /* Establece el espacio entre filas en 2 rem. */
+}
+
+.stream-container {
+    /* Estilos para cada contenedor individual de los streams. */
+    width: 100%; /* Establece el ancho del contenedor al 100% del ancho disponible. */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor. */
+    position: relative; /* Permite posicionar elementos secundarios con respecto a este contenedor. */
+}
+
+.stream-container::before {
+    /* Estilos para un pseudo-elemento ::before dentro de .stream-container. */
+    content: "LIVE"; /* Agrega el texto "LIVE" al elemento antes del contenido principal. */
+    background-color: rgb(255, 0, 0); /* Establece el fondo en rojo. */
+    color: #ffffff; /* Establece el color del texto en blanco. */
+    display: block; /* Hace que el elemento sea un bloque. */
+    padding: 0.2rem 0.5rem; /* Agrega relleno alrededor del texto. */
+    border-radius: 1rem; /* Aplica bordes redondeados con un radio de 1 rem. */
+    font-size: 0.8rem; /* Establece el tamaño de fuente en 0.8 rem. */
+    position: absolute; /* Permite posicionar el elemento de manera absoluta en relación con su contenedor. */
+    top: 1rem; /* Establece una posición superior de 1 rem desde el borde superior del contenedor. */
+    left: 1rem; /* Establece una posición izquierda de 1 rem desde el borde izquierdo del contenedor. */
+    z-index: 1; /* Establece el orden de apilamiento (superposición) de capas. */
+    font-weight: 600; /* Establece el grosor del texto en 600 (negrita). */
+}
+
+.stream-container img {
+    /* Estilos para las imágenes dentro de .stream-container. */
+    width: 100%; /* Establece el ancho de la imagen al 100% del ancho disponible. */
+    border-radius: 15px; /* Aplica bordes redondeados a las imágenes con un radio de 15 píxeles. */
+}
+
+.stream-container h2 {
+    /* Estilos para los títulos dentro de .stream-container. */
+    font-size: 1rem; /* Establece el tamaño de fuente en 1 rem. */
+    animation: none;
+    color: #3cfcec; /* Establece el color del texto en rojo. */
+    line-height: 1.5; /* Establece la altura de línea en 1.5 veces el tamaño de fuente. */
+    margin-top: 0; /* Elimina el margen superior del título. */
+    text-align: left; /* Alinea el texto a la izquierda. */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del elemento. */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos (...) para textos desbordados. */
+    -webkit-line-clamp: 2; /* Limita la visualización del texto a 2 líneas. */
+    -webkit-box-orient: vertical; /* Establece la orientación del texto a vertical. */
+    display: -webkit-box; /* Permite que el texto se comporte como una caja en línea. */
+    font-weight: 600; /* Establece el grosor del texto en 600 (negrita). */
+    min-height: 3rem; /* Establece la altura mínima del título en 3 rem. */
+    font-family: 'Arimo', sans-serif; /* Define la fuente del texto. */
+}
+
+.stream-container p {
+    /* Estilos para los párrafos dentro de .stream-container. */
+    margin-top: 0rem; /* Elimina el margen superior del párrafo. */
+    font-size: 0.9rem; /* Establece el tamaño de fuente en 0.9 rem. */
+    color: #cc00ff; /* Establece el color del texto en un tono de morado. */
+    display: flex; /* Utiliza el modelo de caja flexible para los párrafos. */
+    align-items: center; /* Centra verticalmente los elementos flexibles. */
+    font-weight: 600; /* Establece el grosor del texto en 600 (negrita). */
+}
+
+.stream-container p svg {
+    /* Estilos para los elementos <svg> dentro de los párrafos en .stream-container. */
+    margin-right: 0.5rem; /* Establece un margen derecho de 0.5 rem para los elementos SVG. */
+}
+
+@media screen and (max-width: 768px) {
+    .streams {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ------------------ footer ---------------- */
+footer {
+    width: 100%;
+    background: linear-gradient(#000000, #16a8f1);
+}
+
+footer p{
+    margin: 0px;
+    padding-bottom: 0px;
+}
+/* ------------------ SEGA ---------------- */

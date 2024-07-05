@@ -1,0 +1,11 @@
+/*  Importaciones de fuentes  */
+
+@font-face {
+    font-family: 'Scorpion-Regular';
+    src: url('/src/fonts/scorpion/regular/Scorpion.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Arimo';
+    src: url('/src/fonts/arimo/Arimo-Italic-VariableFont_wght.ttf') format('truetype');
+}

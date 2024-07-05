@@ -1,0 +1,14 @@
+/* Importar archivos CSS dentro de start
+   Carga estilos comunes para todas las paginas*/
+
+@import url('../styles/common/html.css');      /*  Estilos para todos los htmls  */
+@import url('../styles/common/imports.css');   /*  Importaciones  */
+@import url('../styles/common/fonts.css');     /*  Importaciones de fuentes  */
+@import url('../styles/common/body.css');      /*  Estilos para todos los bodys  */
+@import url('../styles/common/header.css');    /*  Estilos para todos los headers  */
+@import url('../styles/common/main.css');      /*  Estilos para todos los mains  */
+@import url('../styles/common/section.css');   /*  Estilos para todos los sctions  */
+@import url('../styles/common/navbar.css');    /*  Estilos para todos las navbars  */
+@import url('../styles/common/blink.css');     /*  Estilos para todos las blinks  */
+@import url('../styles/common/networks.css');  /*  Boton redes sociales  */
+@import url('../styles/common/footer.css');    /*  Estilos para todos los footers  */

@@ -1,0 +1,38 @@
+FPS
+Años 1990 a 1999
+
+La década de los 90 fue realmente importante para el desarrollo de los juegos de disparos en primera persona
+(FPS, por sus siglas en ingles, First Person Shooting). 
+Los juegos de disparos en primera persona (FPS) son un género fascinante que ha evolucionado significativamente
+desde sus inicios.
+Los FPS no solo son populares por su jugabilidad emocionante, sino que también han impactado en la cultura popular 
+ y mediática. Han influenciado películas, series de televisión y han sido a menudo el centro de debates sobre temas 
+ como la violencia en los videojuegos y sus efectos en los jugadores. 
+Además, han sido pioneros en la tecnología de videojuegos, empujando los límites del hardware y software y fomentando
+ comunidades en línea y competiciones de esports.
+El género FPS sigue siendo uno de los más populares y dinámicos en la industria de los videojuegos, continuando su evolución
+ con nuevas tecnologías como la realidad virtual y los avances en inteligencia artificial, prometiendo una inmersión aún mayor
+ y experiencias más ricas para los jugadores.
+Aquí te doy una visión más detallada sobre este género, sus características principales,
+evolución y el impacto cultural que han tenido.
+Características Principales
+Los FPS son juegos centrados en el combate con armas, vistos desde la perspectiva en primera persona; es decir, los jugadores ven
+el entorno de juego desde los ojos del personaje que controlan. Esto crea una inmersión profunda y hace que las acciones del jugador
+se sientan más directas y personales. 
+
+
+
+
+Los elementos comunes incluyen:
+Combate: El enfoque principal está en el combate, generalmente con una variedad de armas.
+Exploración y Navegación: Los jugadores deben moverse a través de diferentes ambientes, que pueden incluir todo, desde instalaciones militares hasta mundos alienígenas.
+Elementos de Puzzle: Muchos FPS incluyen puzzles que los jugadores deben resolver para avanzar.
+Multijugador: Desde "Doom" y especialmente con juegos como "Quake", el componente multijugador ha sido crucial. Los modos de juego pueden incluir desde enfrentamientos directos hasta objetivos basados en equipos.
+Historia y Narrativa: Aunque los primeros FPS tenían tramas simples, juegos como "Half-Life" transformaron las expectativas al integrar profundamente la narrativa en la jugabilidad.
+Evolución del Género
+Desde los primeros días de "Wolfenstein 3D" y "Doom", el género FPS ha experimentado muchas innovaciones:
+Tecnología y Gráficos: Las mejoras en los gráficos y el diseño de niveles han sido significativas, desde los simples sprites 2D hasta complejos modelos 3D y mundos completamente renderizados.
+Realismo y Física: Juegos como "Half-Life 2" introdujeron físicas realistas que afectan tanto al combate como a los puzzles, añadiendo una capa adicional de profundidad a la jugabilidad.
+AI y Comportamiento del Enemigo: La inteligencia artificial ha avanzado, con enemigos que pueden detectar, perseguir y flanquear al jugador de maneras cada vez más sofisticadas.
+Modos de Juego y Personalización: Con el auge de los esports y juegos como "Counter-Strike" y "Overwatch", los modos multijugador y la personalización del personaje se han vuelto centrales.
+Impacto Cultural

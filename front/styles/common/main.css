@@ -1,0 +1,10 @@
+ /*  Estilos para todos los mains  */
+
+main {
+        /*
+    margin-top: 83px; 
+    */
+    /*  Obtiene todo el espacio disponible  */
+    flex: 1;
+
+}

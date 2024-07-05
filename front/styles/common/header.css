@@ -1,0 +1,11 @@
+/*  Estilos para todos los headers  */
+
+header {
+    font-family: "Scorpion-Regular";
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
