@@ -6,7 +6,7 @@ const scoresController = require("../controllers/scoresController");
 
 router.get("/", scoresController.getAllScores);
 router.get("/:id", scoresController.getScoreByPk);
-// router.get("/:id", scoresController.getScoreById);
+// router.get("/id/:id", scoresController.getScoreById);
 router.post("/", scoresController.createScore);
 router.delete("/:id", scoresController.deleteScore);
 router.put("/:id", scoresController.updateScore);

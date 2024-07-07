@@ -6,7 +6,7 @@ const rolesController = require("../controllers/rolesController");
 
 router.get("/", rolesController.getAllRoles);
 router.get("/:id", rolesController.getRolByPk);
-// router.get("/:id", rolesController.getRoleById);
+// router.get("/id/:id", rolesController.getRoleById);
 router.post("/", rolesController.createRol);
 router.delete("/:id", rolesController.deleteRol);
 router.put("/:id", rolesController.updateRol);
