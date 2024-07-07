@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Usuarios</title>
+    <link rel="stylesheet" href="../../styles/cruds/users.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Título de la Página -->
+        <h2>Gestión de Usuarios</h2>
+
+        <!-- Sección de Búsquedas -->
+        <div class="search-section">
+            <button id="fetchAllBtn">Todos</button>
+            <input type="number" id="searchId" placeholder="ID">
+            <button id="fetchByIdBtn">Por ID</button>
+        </div>
+        
+        <!-- Sección de Grilla -->
+        <div class="grid-section">
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>User</th>
+                        <th>Pass</th>
+                        <th>Created At</th>
+                        <th>Modified At</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Datos de la tabla se insertarán aquí -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Botonera de Acciones -->
+    <div class="action-buttons">
+        <button id="addBtn">Agregar</button>
+        <button id="editBtn">Modificar</button>
+        <button id="deleteBtn">Eliminar</button>
+        <button id="saveBtn">Guardar</button>
+        <button id="cancelBtn">Cancelar</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Contenido del footer -->
+    </footer>
+    
+     <!--
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    -->
+    
+    <script src="../../scripts/axios.min.js"></script>
+
+
+    <script src="../../scripts/cruds/users.js"></script>
+
+</body>
+</html>
