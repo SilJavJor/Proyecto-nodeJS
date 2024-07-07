@@ -22,7 +22,7 @@ const getUserById = async (id) => {
     try {
         return await User.findById(id);
     } catch (error) {
-        throw new Error(`Error al obtener el usuario por ID : ${error.message}`);
+        throw new Error(`(Provider) Error al obtener el usuario por ID : ${error.message}`);
     }
 };
 

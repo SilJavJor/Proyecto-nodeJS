@@ -61,7 +61,7 @@ const updateGamer = async (id, data) => {
 module.exports = {
     getAllGamers,
     getGamerByPk,
-    //getGamerById,
+    getGamerById,
     createNewGamer,
     deleteGamer,
     updateGamer,
