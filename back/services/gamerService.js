@@ -30,7 +30,8 @@ const createGamer = async (data) => {
     try {
         return await gamerProvider.createNewGamer(data);
     } catch (error) {
-        throw new Error(`Error al crear el gamer: ${error.message}`);
+        // throw new Error(`(Service) Error al crear el gamer: ${error.message}`);
+        throw new Error(`${error.message}`);
     }
 };
 

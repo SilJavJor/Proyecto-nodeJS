@@ -14,7 +14,7 @@ const getUserByPk = async (id) => {
     try {
         return await userProvider.getUserByPk(id);
     } catch (error) {
-        throw new Error(`Error al obtener el usuario por ID : ${error.message}`);
+        throw new Error(`(Service) Error al obtener el usuario por PK : ${error.message}`);
     }
 };
 
