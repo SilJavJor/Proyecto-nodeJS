@@ -21,22 +21,6 @@ const Score = sequelize.define("scores", {
     ...commonActiveFields,
     ...commonCreatedFields,
     ...commonUpdatedFields
-
-    /*
-    id: {
-        type: DataTypes.INTEGER,
-        autoIncrement: true,
-        primaryKey: true,
-    },
-    points: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-    },
-    gameId: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-    },
-    */
 }, {
     timestamps: true,
 });
