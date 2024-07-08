@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GG Games</title>
+
+    <link rel="stylesheet" href="../../styles/cruds/cruds.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Botonera de tablas -->
+        <div class="main-buttons">
+            <button class="btn-main" data-section="Usuarios">Usuarios</button>
+            <button class="btn-main" data-section="Roles">Roles</button>
+            <button class="btn-main" data-section="Cuentas">Cuentas</button>
+            <button class="btn-main" data-section="Jugadores">Jugadores</button>
+            <button class="btn-main" data-section="Juegos">Juegos</button>
+            <button class="btn-main" data-section="Puntaje">Puntaje</button>
+        </div>
+        
+        <!-- Título de la página -->
+        <h2 id="pageTitle">Gestión de Datos</h2>
+
+        <!-- Sección de búsquedas -->
+        <div class="search-section">
+            <input type="number" id="searchId" placeholder="ID">
+            <button id="fetchBtnBy" class="btn-search">Por ID</button>
+            <button id="fetchBtnAll" class="btn-search">Todos</button>
+        </div>
+        
+        <!-- Grilla de datos -->
+        <div class="grid-section">
+            <table id="Table">
+                <thead>
+                    <tr>
+                        <th> Identificador </th>
+                        <th> Usuario </th>
+                        <th> Clave </th>
+                        <th> Creado el </th>
+                        <th> Modificado el </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los datos de la tabla se agregan aca -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Botonera de acciones -->
+    <div class="action-buttons">
+        <div class="left-buttons">
+            <button id="btnAdd" class="btn-action">Agregar</button>
+            <button id="btnEdit" class="btn-action">Modificar</button>
+            <button id="btnDelete" class="btn-action">Eliminar</button>
+        </div>
+
+        <div class="right-buttons">
+            <button id="btnSave" class="btn-action">Guardar</button>
+            <button id="btnCancel" class="btn-action">Cancelar</button>
+            <button id="btnBack" class="btn-action">Volver</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../scripts/cruds/cruds.js"></script>
+
+    <!--  -->
+    <script src="../../scripts/axios.min.js"></script>
+    
+    <script src="../../scripts/cruds/users.js"></script>
+</body>
+</html>
