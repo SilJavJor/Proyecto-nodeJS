@@ -25,5 +25,3 @@
 
    ```bash
    nodemon index.js
-
-   - El servidor informará el puerto y la base de datos a la que está conectado.
