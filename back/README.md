@@ -16,7 +16,7 @@
 
 ## Servidor
 
-   - Ejecutar el siguiente comando en la carpeta back para levantar el servidor en modo local:
+- Ejecutar el siguiente comando en la carpeta back para que el servidor se ejecute en modo local:
 
    ```bash
    node index.js
