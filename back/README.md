@@ -1,46 +1,43 @@
-# Back-end
+# Backend
 
 ## Instalación
 
--- Ir a la carpeta `back` con:
+1. Ir a la carpeta `back` con el siguiente comando:
+    ```bash
+    cd back
+    ```
 
-```bash
-cd back
+2. Ejecutar el siguiente comando para instalar las dependencias:
+    ```bash
+    npm install
+    ```
 
--- Ejecutar el siguiente comando:
-
-```bash
-npm install
-
--- Esto instalará las dependencias correspondientes.
-
-```bash
-npm install nodemon -g
-
-   - Esto instalará nodemon en forma global.
+3. Ejecutar el siguiente comando para instalar nodemon de forma global:
+    ```bash
+    npm install nodemon -g
+    ```
 
 ## Servidor
 
--- De ser necesario se adjuntan los scripts de cracion de las bases de datos correspondientes a cada entorno en la carpeta info/sqls
+- De ser necesario, se adjuntan los scripts de creación de las bases de datos correspondientes a cada entorno en la carpeta `info/sqls`.
+- En esta carpeta se encuentran los scripts necesarios para crear las bases de datos en forma conjunta o separadas.
 
--- En esta carpeta se encuentran los scripts necesarios para la crear las bases de datos en forma conjunta o separadas
-
--- Ejecutar el siguiente comando en la carpeta back para que el servidor se ejecute en modo local:
-
-```bash
-node index.js
-
--- Este comando ejejcutar el servidor en modo local sin parametros para el servidor
+- Ejecutar el siguiente comando en la carpeta `back` para que el servidor se ejecute en modo local:
+    ```bash
+    node index.js
+    ```
+  - Este comando ejecutará el servidor en modo local sin parámetros adicionales.
 
 o
 
-```bash
-npm run start-dev
+- Ejecutar el siguiente comando para ejecutar el servidor en el entorno de desarrollo:
+    ```bash
+    npm run start-dev
+    ```
+  - Este comando ejecutará el servidor en el entorno de desarrollo.
 
--- Este comando ejecutara el servidor en el entorno de desarrollo
+- Cada entorno tiene su base de datos correspondiente.
 
--- Cada entorno tiene su base de datos correspondiente.
+- Debe considerarse que al modificarse la base de datos, el backend también debe ser modificado.
 
--- Debe considerarse que al modificarse la base de datos el Backend tambien debe ser modificado
-
--- Aqui solo se informa un entorno a modo de ejemplo
+- Aquí solo se informa un entorno a modo de ejemplo.
