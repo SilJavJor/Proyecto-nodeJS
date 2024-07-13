@@ -11,6 +11,7 @@
     ```bash
     npm install
     ```
+    - Esto instalara las dependencias que se encuentran en el archivo pakage.json
 
 3. Ejecutar el siguiente comando para instalar nodemon de forma global:
     ```bash
@@ -28,7 +29,7 @@
     ```
   - Este comando ejecutará el servidor en modo local sin parámetros adicionales.
 
-o
+o tambien se puede ejecutar
 
 - Ejecutar el siguiente comando para ejecutar el servidor en el entorno de desarrollo:
     ```bash
