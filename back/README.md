@@ -24,4 +24,4 @@
    o
 
    ```bash
-   nodemon index.js
+   npm run start-dev
