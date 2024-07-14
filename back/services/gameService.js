@@ -6,7 +6,8 @@ const getAllGames = async () => {
     try {
         return await gameProvider.getAllGames();
     } catch (error) {
-        throw new Error(`Error al obtener los games: ${error.message}`);
+        //throw new Error(`Error al obtener los games: ${error.message}`);
+        throw new Error(`${error.message}`);
     }
 };
 
@@ -14,7 +15,8 @@ const getGameByPk = async (id) => {
     try {
         return await gameProvider.getGameByPk(id);
     } catch (error) {
-        throw new Error(`Error al obtener el game por ID: ${error.message}`);
+        //throw new Error(`Error al obtener el game por ID: ${error.message}`);
+        throw new Error(`${error.message}`);
     }
 };
 
@@ -22,7 +24,8 @@ const getGameById = async (id) => {
     try {
         return await gameProvider.getGameById(id);
     } catch (error) {
-        throw new Error(`Error al obtener el game por ID: ${error.message}`);
+        //throw new Error(`Error al obtener el game por ID: ${error.message}`);
+        throw new Error(`${error.message}`);
     }
 };
 

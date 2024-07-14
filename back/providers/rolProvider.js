@@ -1,12 +1,14 @@
 /*  */
 
 const { Rol } = require("../models/indexModels");
+const messages = require("../config/messagesRoles.js");
 
 const getAllRoles = async () => {
     try {
         return await Rol.findAll();
     } catch (error) {
-        throw new Error(`Error al obtener los roles: ${error.message}`);
+        //throw new Error(`Error al obtener los roles: ${error.message}`);
+        throw new Error( `${messages.ERROR_GETTING_ALL_ROLES}` ` : ${error.message}`);
     }
 };
 
@@ -14,7 +16,7 @@ const getRolByPk = async (id) => {
     try {
         return await Rol.findByPk(id);
     } catch (error) {
-        throw new Error(`Error al obtener el rol por ID: ${error.message}`);
+        throw new Error(`Error al obtener el rol por PK: ${error.message}`);
     }
 };
 

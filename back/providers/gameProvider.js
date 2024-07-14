@@ -1,12 +1,14 @@
 /*  */
 
 const { Game } = require("../models/indexModels");
+const messages = require("../config/messagesGames.js");
 
 const getAllGames = async () => {
     try {
         return await Game.findAll();
     } catch (error) {
-        throw new Error(`Error al obtener los games: ${error.message}`);
+        //throw new Error(`Error al obtener los games: ${error.message}`);
+        throw new Error( `${messages.ERROR_GETTING_ALL_GAMES}` ` : ${error.message}`);
     }
 };
 

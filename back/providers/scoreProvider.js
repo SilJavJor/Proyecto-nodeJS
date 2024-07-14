@@ -1,12 +1,14 @@
 /*  */
 
 const { Score } = require("../models/indexModels");
+const messages = require("../config/messagesScores.js");
 
 const getAllScores = async () => {
     try {
         return await Score.findAll();
     } catch (error) {
-        throw new Error(`Error al obtener los scores: ${error.message}`);
+        //throw new Error(`Error al obtener los scores: ${error.message}`);
+        throw new Error( `${messages.ERROR_GETTING_ALL_SCORES}` ` : ${error.message}`);
     }
 };
 

@@ -1,12 +1,14 @@
 /*  */
 
 const { Gamer } = require("../models/indexModels");
+const messages = require("../config/messagesGamers.js");
 
 const getAllGamers = async () => {
     try {
         return await Gamer.findAll();
     } catch (error) {
-        throw new Error(`Error al obtener los gamers: ${error.message}`);
+        //throw new Error(`Error al obtener los gamers: ${error.message}`);
+        throw new Error( `${messages.ERROR_GETTING_ALL_GAMERS}` ` : ${error.message}`);
     }
 };
 

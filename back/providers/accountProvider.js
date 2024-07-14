@@ -1,12 +1,14 @@
 /*  */
 
 const { Account } = require("../models/indexModels");
+const messages = require("../config/messagesAccounts.js");
 
 const getAllAccounts = async () => {
     try {
         return await Account.findAll();
     } catch (error) {
-        throw new Error(`Error al obtener las cuentas : ${error.message}`);
+        //throw new Error(`Error al obtener las cuentas : ${error.message}`);
+        throw new Error( `${messages.ERROR_GETTING_ALL_ACCOUNTS}` ` : ${error.message}`);
     }
 };
 
