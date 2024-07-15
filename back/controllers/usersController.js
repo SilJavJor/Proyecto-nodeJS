@@ -20,7 +20,7 @@ const getAllUsers = async (req, res) => {
 const getUserByPk = async (req, res) => {
     try {
         const user = await userService.getUserByPk(req.params.id);
-        
+
         if (user) {
             res.json(user);
         } else {
