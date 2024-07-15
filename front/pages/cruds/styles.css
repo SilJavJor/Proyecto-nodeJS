@@ -1,0 +1,82 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.grid, .panel {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #495057;
+}
+
+.grid {
+    /*flex: 1;*/
+    flex: 1 1 60%;
+    height: 100%;
+}
+
+.panels {
+    /*flex: 2;
+    margin-left: 20px;*/
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1 1 35%;
+}
+
+.panel {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.upper-panel, .lower-panel {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    color: #ffffff;
+}
+
+/*
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+*/
+
+
+.btn-primary, .btn-success, .btn-warning, .btn-danger {
+    color: #ffffff;
+}
+
+.nav-tabs .nav-link {
+    color: #ffffff;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #343a40;
+    border-color: #495057;
+}
+
+.btn-cancelar {
+    margin-left: auto;
+}

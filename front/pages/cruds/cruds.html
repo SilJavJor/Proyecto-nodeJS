@@ -3,76 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GG Games</title>
-
-    <link rel="stylesheet" href="../../styles/cruds/cruds.css">
+    <title>Gestión de Usuarios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.11.3/datatables.min.css"/>
 </head>
 <body>
     <div class="container">
-        <!-- Botonera de tablas -->
-        <div class="main-buttons">
-            <button class="btn-main" data-section="Usuarios">Usuarios</button>
-            <button class="btn-main" data-section="Roles">Roles</button>
-            <button class="btn-main" data-section="Cuentas">Cuentas</button>
-            <button class="btn-main" data-section="Jugadores">Jugadores</button>
-            <button class="btn-main" data-section="Juegos">Juegos</button>
-            <button class="btn-main" data-section="Puntaje">Puntaje</button>
-        </div>
-        
-        <!-- Título de la página -->
-        <h2 id="pageTitle">Gestión de Datos</h2>
-
-        <!-- Sección de búsquedas -->
-        <div class="search-section">
-            <input type="number" id="searchId" placeholder="ID">
-            <button id="fetchBtnBy" class="btn-search">Por ID</button>
-            <button id="fetchBtnAll" class="btn-search">Todos</button>
-        </div>
-        
-        <!-- Grilla de datos -->
-        <div class="grid-section">
-            <table id="Table">
-                <thead>
-                    <tr>
-                        <th> Identificador </th>
-                        <th> Usuario </th>
-                        <th> Clave </th>
-                        <th> Creado el </th>
-                        <th> Modificado el </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Los datos de la tabla se agregan aca -->
-                </tbody>
-            </table>
+        <header class="text-center">
+            <h2 id="page-title">Gestión de </h2>
+        </header>
+        <div class="main-content">
+            <div id="data-grid" class="col-md-9 grid">
+                <table id="detalle-registro" class="table table-bordered table-striped" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Usuario</th>
+                            <th>Clave</th>
+                            <th>Email</th>
+                            <th>Chequeado</th>
+                            <th>Activo</th>
+                            <th>Creado el</th>
+                            <th>Modificado el</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí se insertará la fila -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-3 panels">
+                <div id="upper-panel" class="panel upper-panel">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="agregar-tab" data-bs-toggle="tab" data-bs-target="#agregar" type="button" role="tab" aria-controls="agregar" aria-selected="true">Agregar</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="modificar-tab" data-bs-toggle="tab" data-bs-target="#modificar" type="button" role="tab" aria-controls="modificar" aria-selected="false">Modificar</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="eliminar-tab" data-bs-toggle="tab" data-bs-target="#eliminar" type="button" role="tab" aria-controls="eliminar" aria-selected="false">Eliminar</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="agregar" role="tabpanel" aria-labelledby="agregar-tab">
+                            <form id="agregar-form">
+                                <div class="mb-3"></div>
+                                <div class="form-group">
+                                    <label for="usuario" class="form-label">Usuario</label>
+                                    <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Ingrese el usuario">
+                                </div>
+                                <div class="mb-3"></div>
+                                <div class="form-group">
+                                    <label for="clave" class="form-label">Clave</label>
+                                    <input type="password" class="form-control" id="clave" name="clave" placeholder="Ingrese la clave">
+                                </div>
+                                <div class="mb-3"></div>
+                                <div class="d-flex justify-content-between">
+                                    <button type="submit" class="btn btn-success mb-2">Guardar</button>
+                                    <div></div>
+                                    <button type="reset" class="btn btn-secondary mb-2 btn-cancelar">Cancelar</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="modificar" role="tabpanel" aria-labelledby="modificar-tab">
+                            <form id="modificar-form">
+                                <div class="mb-3"></div>
+                                <div class="form-group">
+                                    <label for="usuario-mod" class="form-label">Usuario</label>
+                                    <input type="text" class="form-control" id="usuario-mod" name="usuario-mod" placeholder="Ingrese el usuario">
+                                </div>
+                                <div class="mb-3"></div>
+                                <div class="form-group">
+                                    <label for="clave-mod" class="form-label">Clave</label>
+                                    <input type="password" class="form-control" id="clave-mod" name="clave-mod" placeholder="Ingrese la clave">
+                                </div>
+                                <div class="mb-3"></div>
+                                <div class="d-flex justify-content-between">
+                                    <button type="submit" class="btn btn-success mb-2">Guardar</button>
+                                    <div></div>
+                                    <button type="reset" class="btn btn-secondary mb-2 btn-cancelar">Cancelar</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="eliminar" role="tabpanel" aria-labelledby="eliminar-tab">
+                            <form id="eliminar-form">
+                                <div class="mb-3"></div>
+                                <div class="form-group">
+                                    <label for="usuario-elim" class="form-label">Usuario</label>
+                                    <input type="text" class="form-control" id="usuario-elim" name="usuario-elim" placeholder="Ingrese el usuario a eliminar" readonly>
+                                </div>
+                                <div class="mb-3"></div>
+                                <div class="d-flex justify-content-between">
+                                    <button type="submit" class="btn btn-danger mb-2">Eliminar</button>
+                                    <div></div>
+                                    <button type="reset" class="btn btn-secondary mb-2 btn-cancelar">Cancelar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="lower-panel" class="panel lower-panel">
+                    <button id="buscar-todos" class="btn btn-secondary mb-2">Buscar todos</button>
+                    <div class="mb-3"></div>
+                    <input type="text" id="buscar-id" class="form-control mb-2" placeholder="Ingrese ID a buscar">
+                    <button id="buscar-por" class="btn btn-primary mb-2">Buscar por</button>
+                    <div class="mb-3"></div>
+                    <div class="d-flex justify-content-between">
+                       <button id="agregar-tab-btn" class="btn btn-success mb-2">Agregar</button>
+                       <button id="modificar-tab-btn" class="btn btn-warning mb-2">Modificar</button>
+                       <button id="eliminar-tab-btn" class="btn btn-danger mb-2">Eliminar</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Botonera de acciones -->
-    <div class="action-buttons">
-        <div class="left-buttons">
-            <button id="btnAdd" class="btn-action">Agregar</button>
-            <button id="btnEdit" class="btn-action">Modificar</button>
-            <button id="btnDelete" class="btn-action">Eliminar</button>
-        </div>
+    <!--     -->
 
-        <div class="right-buttons">
-            <button id="btnSave" class="btn-action">Guardar</button>
-            <button id="btnCancel" class="btn-action">Cancelar</button>
-            <button id="btnBack" class="btn-action">Volver</button>
-        </div>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-    <!-- Footer -->
-    <footer>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="../../scripts/cruds/cruds.js"></script>
-
-    <!--  -->
-    <script src="../../scripts/axios.min.js"></script>
-    
-    <script src="../../scripts/cruds/users.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.11.3/datatables.min.js"></script>
+    <script src="scripts.js" type="module"></script>
 </body>
 </html>
