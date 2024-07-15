@@ -45,7 +45,7 @@ function agregarRegistro(event) {
     var usuario = document.getElementById('usuario').value;
     var clave = document.getElementById('clave').value;
 
-    axios.post('/api/usuarios', { usuario: usuario, clave: clave })
+    axios.post(API_USERS, { usuario: usuario, clave: clave })
         .then(function(response) {
             buscarTodosLosRegistros();
 
@@ -64,6 +64,7 @@ function modificarRegistro(event) {
     var clave = document.getElementById('clave-mod').value;
     
     axios.put('http://localhost:3030/users/' + id, { usuario: usuario, clave: clave })
+    //axios.put(API_USERS + id, { usuario: usuario, clave: clave })
         .then(function(response) {
             buscarTodosLosRegistros();
             
@@ -76,8 +77,11 @@ function modificarRegistro(event) {
 
 function eliminarRegistro(event) {
     event.preventDefault();
+
     var id = document.getElementById('usuario-elim').dataset.id;
-    axios.delete('http://localhost:3030/users/' + id)
+
+    //axios.delete('http://localhost:3030/users/' + id)
+    axios.delete(API_USERS + id)
         .then(function(response) {
             buscarTodosLosRegistros();
 
